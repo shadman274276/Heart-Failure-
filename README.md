@@ -22,7 +22,7 @@ Data are downloaded automatically with `GEOparse`, so internet must be ON.
 4. Fixed train/test split: 80/20, stratified, `random_state=42`. The same split is reused in every later step (no re-splitting).
 5. Leakage-safe feature selection (training set only)**:
    - Differential expression: Welch t-test, Benjamini-Hochberg FDR < 0.05 and |log2FC| > 0.5
-   - L1-penalised logistic regression (LASSO, `C=0.05`) to select the **20-gene panel**
+   - L1-penalised logistic regression (LASSO, `C=0.05`) to select the 20-gene panel
 6. Model comparison (12 models)
    - Classical ML (8): Logistic Regression, Random Forest, SVM, XGBoost, KNN, Naive Bayes, AdaBoost, Gradient Boosting
    - Deep learning (4): MLP, 1D-CNN, ResMLP, FT-Transformer
@@ -44,8 +44,8 @@ Data are downloaded automatically with `GEOparse`, so internet must be ON.
 
 ### Platform
 - Kaggle Notebook
-- Accelerator: **GPU T4 x2**
-- Internet: **ON**
+- Accelerator: GPU T4 x2
+- Internet: ON
 - Output folder used by the notebook: `/kaggle/working`
 
 ### Python packages
